@@ -152,19 +152,35 @@
 
 <body>
 
-<!-- 🎥 HERO -->
-<div class="hero">
-  <video autoplay muted loop>
-    <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-beach-1573/1080p.mp4" type="video/mp4">
-  </video>
-
-  <div class="overlay"></div>
-
-  <div class="hero-text">
-    <h1>Riviera Escape</h1>
-    <p>Там, где начинается твой отпуск</p>
+<!-- HERO -->
+<section
+  class="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+  style="background-image: url('00.jpg');"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Content -->
+  <div class="relative z-10 text-white px-6 fade-up">
+    <h1 class="text-4xl md:text-6xl mb-6 font-bold drop-shadow-xl">
+      Там, где начинается твой отпуск
+    </h1>
+    <p class="text-lg md:text-2xl mb-6 drop-shadow-lg">
+      Rue de France · 3 минуты до моря · Высокий этаж
+    </p>
+    <div class="space-x-4">
+      <a href="#ru"
+         class="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">
+         RU
+      </a>
+      <a href="#en"
+         class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-black transition">
+         EN
+      </a>
+    </div>
   </div>
-</div>
+</section>
+
+
 
 <!-- 💎 PREMIUM TOGGLE -->
 <div class="lux-toggle">
