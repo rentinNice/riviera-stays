@@ -127,10 +127,9 @@
   </div>
 </div>
 
-<div class="filters">
-  <button onclick="filter('all')">Все</button>
-  <button onclick="filter('apartment')">Квартиры</button>
-  <button onclick="filter('villa')">Виллы</button>
+<div class="switcher">
+  <button class="active" onclick="filter('all', this)">Квартиры</button>
+  <button onclick="filter('villa', this)">Виллы</button>
 </div>
   
 <!-- 🏡 LISTINGS -->
