@@ -191,6 +191,30 @@
 </div>
 
 <script>
+function switchType(type) {
+  const buttons = document.querySelectorAll(".toggle button");
+  const slider = document.querySelector(".slider");
+  const cards = document.querySelectorAll(".card");
+
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  if (type === "apartment") {
+    buttons[0].classList.add("active");
+    slider.style.left = "0%";
+  } else {
+    buttons[1].classList.add("active");
+    slider.style.left = "50%";
+  }
+
+  // фільтр
+  cards.forEach(card => {
+    card.style.display =
+      card.dataset.type === type ? "block" : "none";
+  });
+}
+</script>
+  
+<script>
 function filter(type, btn) {
   const cards = document.querySelectorAll(".card");
   const buttons = document.querySelectorAll(".switcher button");
