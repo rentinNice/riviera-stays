@@ -94,33 +94,30 @@ style="background-image: url('00.jpg');"
 <div class="absolute inset-0 bg-black/60"></div>
 
 <div class="relative z-10 px-6 fade-up">
+
 <h1 class="text-4xl md:text-6xl mb-6 font-bold">
 Там, где начинается твой отпуск
 </h1>
 
-<p class="text-lg md:text-2xl mb-8 opacity-80">
+<p class="text-lg md:text-2xl mb-10 opacity-80">
 Открой для себя отдых у моря
 </p>
 
-<a href="#listings"
-class="px-8 py-3 bg-white text-black rounded-full hover:bg-gray-200 transition">
-Смотреть варианты
-</a>
+<!-- 💎 TOGGLE В HERO -->
+<div class="lux-toggle">
+  <div class="lux-slider"></div>
+
+  <div class="lux-option active" onclick="switchType('apartment', this)">
+    Квартиры
+  </div>
+
+  <div class="lux-option" onclick="switchType('villa', this)">
+    Виллы
+  </div>
+</div>
+
 </div>
 </section>
-
-<!-- 💎 TOGGLE -->
-<div class="lux-toggle">
-<div class="lux-slider"></div>
-
-<div class="lux-option active" onclick="switchType('apartment', this)">
-Квартиры
-</div>
-
-<div class="lux-option" onclick="switchType('villa', this)">
-Виллы
-</div>
-</div>
 
 <!-- 🏡 LISTINGS -->
 <section id="listings" class="py-16 bg-[#111]">
