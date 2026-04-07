@@ -169,27 +169,30 @@
 </div>
 
 <script>
-function switchType(type) {
-  const buttons = document.querySelectorAll(".toggle button");
-  const slider = document.querySelector(".slider");
+function switchType(type, el) {
+  const slider = document.querySelector(".lux-slider");
+  const options = document.querySelectorAll(".lux-option");
   const cards = document.querySelectorAll(".card");
 
-  buttons.forEach(btn => btn.classList.remove("active"));
+  options.forEach(o => o.classList.remove("active"));
+  el.classList.add("active");
 
   if (type === "apartment") {
-    buttons[0].classList.add("active");
-    slider.style.left = "0%";
+    slider.style.left = "6px";
   } else {
-    buttons[1].classList.add("active");
     slider.style.left = "50%";
   }
 
-  // фільтр
   cards.forEach(card => {
     card.style.display =
       card.dataset.type === type ? "block" : "none";
   });
 }
+
+// стартове положення
+window.onload = () => {
+  switchType('apartment', document.querySelector('.lux-option'));
+};
 </script>
   
 
