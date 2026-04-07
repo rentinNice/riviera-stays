@@ -29,3 +29,33 @@ img {
 .filters button:hover {
   background: #ddd;
 }
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  background: #222;
+  border-radius: 30px;
+  padding: 5px;
+  width: fit-content;
+}
+
+.switcher button {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.switcher button.active {
+  background: white;
+  color: black;
+}
+
+.switcher button:hover {
+  opacity: 0.8;
+}
