@@ -166,14 +166,21 @@
 </div>
 
 <script>
-function filter(type) {
+function filter(type, btn) {
   const cards = document.querySelectorAll(".card");
+  const buttons = document.querySelectorAll(".switcher button");
 
+  // переключає активну кнопку
+  buttons.forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  // фільтр
   cards.forEach(card => {
     if (type === "all") {
       card.style.display = "block";
     } else {
-      card.style.display = card.dataset.type === type ? "block" : "none";
+      card.style.display =
+        card.dataset.type === type ? "block" : "none";
     }
   });
 }
