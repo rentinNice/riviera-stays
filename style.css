@@ -10,3 +10,22 @@ body {
 img {
   width: 300px;
 }
+
+.filters {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.filters button:hover {
+  background: #ddd;
+}
