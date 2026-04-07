@@ -123,23 +123,29 @@
 
   <div class="hero-text">
     <h1>Riviera Escape</h1>
-    <p>Открой для себя отдых у моря</p>
+    <p>Там, где начинается твой отпуск</p>
   </div>
 </div>
 
+<div class="filters">
+  <button onclick="filter('all')">Все</button>
+  <button onclick="filter('apartment')">Квартиры</button>
+  <button onclick="filter('villa')">Виллы</button>
+</div>
+  
 <!-- 🏡 LISTINGS -->
 <div class="section">
   <div class="cards">
 
     <a href="listing1.html">
-      <div class="card">
+      <div class="card" data-type="apartment">
         <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
         <h3>Уют у моря</h3>
       </div>
     </a>
 
     <a href="listing2.html">
-      <div class="card">
+      <div class="card" data-type="villa">
         <img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d">
         <h3>Вид на закат</h3>
       </div>
@@ -160,5 +166,19 @@
   </iframe>
 </div>
 
+<script>
+function filter(type) {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    if (type === "all") {
+      card.style.display = "block";
+    } else {
+      card.style.display = card.dataset.type === type ? "block" : "none";
+    }
+  });
+}
+</script>
+  
 </body>
 </html>
