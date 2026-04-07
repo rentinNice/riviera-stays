@@ -169,3 +169,20 @@ body {
 .back-btn:hover svg {
   transform: translateX(-3px);
 }
+
+.cta-section {
+  background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #06b6d4,
+    #22c55e
+  );
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
