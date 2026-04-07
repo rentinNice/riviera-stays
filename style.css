@@ -113,6 +113,7 @@ body {
 }
 
 /* 💎 BACK BUTTON PREMIUM */
+/* 💎 BACK BUTTON PREMIUM (PURE CSS) */
 .back-btn {
   position: fixed;
   top: 30px;
@@ -121,12 +122,12 @@ body {
 
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 
-  padding: 10px 16px;
+  padding: 12px 18px;
   border-radius: 50px;
 
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   backdrop-filter: blur(12px);
 
   color: white;
@@ -136,6 +137,12 @@ body {
 
   border: 1px solid rgba(255,255,255,0.2);
 
+  transition: all 0.3s ease;
+}
+
+/* стрілка */
+.back-btn .arrow {
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -143,8 +150,12 @@ body {
 .back-btn:hover {
   background: white;
   color: black;
-  transform: translateX(-5px);
+  transform: translateX(-6px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.back-btn:hover .arrow {
+  transform: translateX(-4px);
 }
 
 /* 🔥 SVG FIX (ВАЖЛИВО) */
