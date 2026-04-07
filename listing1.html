@@ -22,3 +22,220 @@
 
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartment in Nice | Rue de France</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+.fade-up {
+opacity: 0;
+transform: translateY(40px);
+transition: all 1s ease;
+}
+.fade-up.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+.glass {
+backdrop-filter: blur(12px);
+background: rgba(255,255,255,0.1);
+}
+
+.gradient-text {
+background: linear-gradient(90deg,#ffffff,#d4d4d4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.parallax {
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- HERO -->
+<section
+  class="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+  style="background-image: url('00.jpg');"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Content -->
+  <div class="relative z-10 text-white px-6 fade-up">
+    <h1 class="text-4xl md:text-6xl mb-6 font-bold drop-shadow-xl">
+      Апартаменты в центре Ниццы
+    </h1>
+    <p class="text-lg md:text-2xl mb-6 drop-shadow-lg">
+      Rue de France · 3 минуты до моря · Высокий этаж
+    </p>
+    <div class="space-x-4">
+      <a href="#ru"
+         class="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">
+         RU
+      </a>
+      <a href="#en"
+         class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-black transition">
+         EN
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- RUSSIAN VERSION -->
+<section id="ru" class="py-24 px-6 max-w-6xl mx-auto">
+<h2 class="text-4xl mb-12 text-center fade-up">О квартире</h2>
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="fade-up">
+<p class="text-lg leading-relaxed mb-6">
+Современная, светлая квартира площадью около 30 м² с отдельной кухней и просторной террасой 8 м².
+Дом расположен на второй линии от моря — всего 3 минуты пешком до набережной.
+</p>
+<p class="text-lg leading-relaxed mb-6">
+Высокий этаж, много света, свежий качественный ремонт и действительно удобное расположение — всё рядом.
+</p>
+<ul class="space-y-3 text-lg">
+<li>• 4 спальных места</li>
+<li>• 2 отдельные кровати</li>
+<li>• Раскладной диван</li>
+<li>• Отдельная полностью оборудованная кухня</li>
+<li>• Современная душевая</li>
+<li>• Терраса с видом на город</li>
+<li>• Частная парковка</li>
+</ul>
+</div>
+
+<img src="111.png"
+alt="Светлая гостиная с диваном, стеклянным столиком и современной картиной"
+class="rounded-2xl shadow-2xl fade-up">
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="bg-gray-50 py-24 px-6">
+<h2 class="text-4xl mb-16 text-center fade-up">Фотографии</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+<img src="01.png"
+alt="Терраса с плетёной мебелью и видом на крыши Ниццы"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="02.png"
+alt="Спальня с двумя кроватями и голубыми изголовьями"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="03.png"
+alt="Современная кухня с чёрным мраморным фартуком"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="04.png"
+alt="Стильная ванная комната с душевой кабиной"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="05.png"
+alt="Вторая спальня с двумя кроватями и белым текстилем"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="06.png"
+alt="Вид с террасы на центр Ниццы и голубое небо"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+</div>
+</section>
+
+<!-- LOCATION -->
+<section class="py-24 px-6 max-w-6xl mx-auto">
+<h2 class="text-4xl mb-12 text-center fade-up">Идеальная локация</h2>
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="fade-up">
+<ul class="space-y-4 text-lg">
+<li>• 3 минуты до моря</li>
+<li>• 5 минут до трамвая (прямой маршрут из аэропорта)</li>
+<li>• Автобусная остановка рядом</li>
+<li>• Супермаркет и магазины в шаговой доступности</li>
+<li>• Самый центр Ниццы</li>
+</ul>
+<p class="mt-6 text-lg leading-relaxed">
+Идеальный вариант для туристов: море, транспорт, рестораны и магазины — всё буквально за углом.
+</p>
+</div>
+
+<img src="07.png"
+alt="Панорамный вид на центр Ниццы"
+class="rounded-2xl shadow-2xl fade-up">
+</div>
+</section>
+
+<!-- ENGLISH VERSION -->
+<section id="en" class="bg-black text-white py-24 px-6">
+<div class="max-w-5xl mx-auto text-center fade-up">
+<h2 class="text-4xl mb-8">Apartment in the Heart of Nice</h2>
+<p class="text-lg leading-relaxed mb-6">
+Modern 30 m² apartment with a separate kitchen and an 8 m² terrace.
+Located on the second line from the sea — just 3 minutes walking to the beach.
+</p>
+<p class="text-lg leading-relaxed mb-6">
+High floor, lots of natural light, fresh quality renovation and truly unbeatable location.
+</p>
+<p class="text-lg leading-relaxed">
+4 sleeping places: two single beds and a sofa bed.  
+5 minutes to tram (direct line from the airport).  
+Supermarket, shops and restaurants nearby.  
+Private parking available.
+Address: Rue de France, Nice.
+</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-24 text-center px-6">
+<h2 class="text-4xl mb-6 fade-up">Book your stay in Nice</h2>
+<a href="mailto:booking@example.com"
+class="inline-block mt-4 px-10 py-4 bg-black text-white rounded-full text-lg hover:scale-110 transition duration-500">
+Contact for booking
+Whatsapp +337 53 06 57 45
+</a>
+</section>
+
+<footer class="text-center py-8 text-sm text-gray-500">
+© 2026 Nice Apartment · Rue de France
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-up');
+const appearOptions = { threshold: 0.2 };
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+entry.target.classList.add('show');
+observer.unobserve(entry.target);
+});
+}, appearOptions);
+
+faders.forEach(fader => {
+appearOnScroll.observe(fader);
+});
+</script>
+
+</body>
+</html>
