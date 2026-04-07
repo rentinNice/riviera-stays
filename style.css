@@ -119,7 +119,7 @@ body {
   left: 30px;
   z-index: 1000;
 
-  display: inline-flex; /* ✅ ГОЛОВНЕ */
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 
@@ -147,13 +147,15 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* icon */
+/* 🔥 SVG FIX (ВАЖЛИВО) */
 .back-btn svg {
-  width: 14px;
-  height: 14px;
-  transition: 0.3s;
+  width: 14px !important;
+  height: 14px !important;
+  display: block;
+  flex-shrink: 0;
 }
 
+/* анімація стрілки */
 .back-btn:hover svg {
   transform: translateX(-3px);
 }
