@@ -201,3 +201,8 @@ img {
 .back-btn:hover svg {
   transform: translateX(-4px);
 }
+
+.back-btn svg {
+  width: 16px;
+  height: 16px;
+}
