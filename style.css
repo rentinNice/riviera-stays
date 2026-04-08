@@ -171,15 +171,46 @@ body {
   transform: translateX(-3px);
 }
 
+/* щоб блок став як hero */
 .cta-section {
-  background: linear-gradient(
-    135deg,
-    #0ea5e9,
-    #06b6d4,
-    #22c55e
-  );
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease infinite;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* відео */
+.cta-video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* затемнення */
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* контент */
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* текст */
+.cta-inner h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
 @keyframes gradientMove {
