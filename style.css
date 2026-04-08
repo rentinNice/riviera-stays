@@ -171,31 +171,11 @@ body {
   transform: translateX(-3px);
 }
 
-/* 🎥 ВІДЕО ЗАМІСТЬ СИНЬОГО ФОНУ */
-.cta-video-simple {
-  position: relative;
-  overflow: hidden;
-}
-
-/* відео */
-.cta-bg-simple {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* затемнення */
-.cta-overlay-simple {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-}
-
-/* контент зверху */
-.cta-content-simple {
-  position: relative;
-  z-index: 2;
+.cta-azure {
+  background: linear-gradient(
+    135deg,
+    #0284c7,
+    #06b6d4,
+    #14b8a6
+  );
 }
