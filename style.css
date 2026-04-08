@@ -171,15 +171,6 @@ body {
   transform: translateX(-3px);
 }
 
-.cta-azure {
-  background: linear-gradient(
-    135deg,
-    #0284c7,
-    #06b6d4,
-    #14b8a6
-  );
-}
-
 .glow-btn {
   background: white;
   color: #0f172a;
