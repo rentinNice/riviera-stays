@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Townhouse in Nice | Fabron</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+.fade-up {
+opacity: 0;
+transform: translateY(40px);
+transition: all 1s ease;
+}
+.fade-up.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+.glass {
+backdrop-filter: blur(12px);
+background: rgba(255,255,255,0.1);
+}
+
+.gradient-text {
+background: linear-gradient(90deg,#ffffff,#d4d4d4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.parallax {
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<section class="py-24 px-6 max-w-6xl mx-auto">
+
+  <!-- 💎 КНОПКА -->
+  <a href="index.html" class="back-btn" style="margin-bottom:40px;">
+    <span class="arrow">←</span>
+    На главную
+  </a>
+
+  <!-- 💎 GRID -->
+  <div class="grid md:grid-cols-2 gap-20 items-center">
+
+    <!-- ЛІВА ЧАСТИНА -->
+    <div class="fade-up">
+
+      <h1 class="text-3xl mb-6 font-semibold">
+        N1 · Ницца
+      </h1>
+
+      <p class="text-lg leading-relaxed mb-6">
+        Современная, светлая квартира площадью около 30 м² с отдельной кухней и просторной террасой 8 м².
+      </p>
+
+      <p class="text-lg leading-relaxed mb-8">
+        Дом расположен на второй линии от моря — всего 3 минуты пешком до набережной.
+      </p>
+
+      <!-- ✔ СПИСОК -->
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg">
+
+        <li>✔ 4 спальных места</li>
+        <li>✔ 2 отдельные кровати</li>
+        <li>✔ Раскладной диван</li>
+        <li>✔ Отдельная кухня</li>
+        <li>✔ Современная душевая</li>
+        <li>✔ Терраса с видом</li>
+        <li>✔ Частная парковка</li>
+
+      </ul>
+
+    </div>
+
+    <!-- ПРАВА ЧАСТИНА (ВАЖЛИВО) -->
+    <div class="fade-up">
+      <img src="n1_1.png" class="rounded-2xl shadow-2xl w-full">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="bg-gray-50 py-24 px-6">
+<h2 class="text-4xl mb-16 text-center fade-up">Фотографии</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+<img src="n1_1.png"
+alt="Терраса с плетёной мебелью и видом на крыши Ниццы"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="n1_2.png"
+alt="Спальня с двумя кроватями и голубыми изголовьями"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="n1_3.png"
+alt="Современная кухня с чёрным мраморным фартуком"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="n1_4.png"
+alt="Стильная ванная комната с душевой кабиной"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="n1_5.png"
+alt="Вторая спальня с двумя кроватями и белым текстилем"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+<img src="n1_6.png"
+alt="Вид с террасы на центр Ниццы и голубое небо"
+class="rounded-2xl shadow-lg hover:scale-105 transition duration-700">
+
+</div>
+</section>
+
+<!-- LOCATION -->
+<section class="py-24 px-6 max-w-6xl mx-auto">
+<h2 class="text-4xl mb-12 text-center fade-up">Идеальная локация</h2>
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="fade-up">
+<ul class="space-y-4 text-lg">
+<li>• 3 минуты до моря</li>
+<li>• 5 минут до трамвая (прямой маршрут из аэропорта)</li>
+<li>• Автобусная остановка рядом</li>
+<li>• Супермаркет и магазины в шаговой доступности</li>
+<li>• Самый центр Ниццы</li>
+</ul>
+<p class="mt-6 text-lg leading-relaxed">
+Идеальный вариант для туристов: море, транспорт, рестораны и магазины — всё буквально за углом.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- VIDEO -->
+<section class="py-12 px-6 max-w-xl mx-auto text-center fade-in">
+  <h2 id="videoTitle" class="text-2xl mb-4">A short glimpse</h2>
+  <div class="aspect-video">
+    <video controls class="w-full h-full rounded-xl shadow">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+  <!-- CTA -->
+<section 
+  class="py-16 text-center text-white fade-in"
+  style="background: linear-gradient(135deg,#0284c7,#06b6d4,#14b8a6);"
+>
+  <h2 class="text-3xl mb-6">
+    Забронируй отдых на Лазурном Берегу
+  </h2>
+
+  <a href="https://wa.me/33753065745" target="_blank">
+    <button class="bg-white text-gray-800 px-8 py-3 rounded-full">
+      Написать в WhatsApp
+    </button>
+  </a>
+</section>
+  
+<footer class="text-center py-8 text-sm text-gray-500">
+© 2026 French Riviera
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-up');
+const appearOptions = { threshold: 0.2 };
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+entry.target.classList.add('show');
+observer.unobserve(entry.target);
+});
+}, appearOptions);
+
+faders.forEach(fader => {
+appearOnScroll.observe(fader);
+});
+</script>
+
+</body>
+</html>
